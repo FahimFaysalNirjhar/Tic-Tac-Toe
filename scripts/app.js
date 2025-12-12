@@ -57,6 +57,7 @@ boxes.forEach((box) => {
 });
 
 const checkWinner = () => {
+  let winnerFound = false;
   for (let pattern of winPattens) {
     let position1 = boxes[pattern[0]].innerText;
     let position2 = boxes[pattern[1]].innerText;
@@ -64,10 +65,22 @@ const checkWinner = () => {
 
     if (position1 != "" && position2 != "" && position3 != "") {
       if (position1 === position2 && position2 === position3) {
-        console.log("winner");
+        winnerFound = true;
         showWinner(position1);
       }
     }
+  }
+
+  let allFilled = true;
+  boxes.forEach((box) => {
+    if (box.innerText === "") allFilled = false;
+  });
+  if (!winnerFound && allFilled) {
+    main.classList.add("hidden");
+    msgContainer.classList.remove("hidden");
+    msg.innerText = `No winner this time — play again!`;
+    disabledBoxes();
+    successSound.play();
   }
 };
 
