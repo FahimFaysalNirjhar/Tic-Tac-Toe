@@ -18,8 +18,20 @@
       }
     </style>
   </head>
-  <body class="bg-[#3d405b] min-h-screen text-center">
-    <div id="msg-container"></div>
+  <body
+    class="bg-[#3d405b] min-h-screen text-center flex justify-center items-center"
+  >
+    <div id="msg-container " class="hidden">
+      <h1 class="text-4xl md:text-7xl text-[#f4f1de] font-bold">
+        Congratulations Winner is X
+      </h1>
+      <button
+        id="New-btn"
+        class="btn bg-[#283d3b] text-[#f4f1de] text-3xl outline-0 shadow-none border-spacing-0 border-0 mt-6"
+      >
+        New Game
+      </button>
+    </div>
     <main class="max-w-sm mx-auto pt-20">
       <h1 class="text-[#f4f1de] text-5xl">Tic Tac Toe Game</h1>
       <!-- game -->

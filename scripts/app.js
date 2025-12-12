@@ -13,6 +13,11 @@ const winPattens = [
   [6, 7, 8],
 ];
 
+const disabledBoxes = () => {
+  for (box of boxes) {
+    box.disabled = true;
+  }
+};
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (turnX) {
@@ -29,3 +34,21 @@ boxes.forEach((box) => {
     checkWinner();
   });
 });
+
+const checkWinner = () => {
+  for (let pattern of winPattens) {
+    let position1 = boxes[pattern[0]].innerText;
+    let position2 = boxes[pattern[1]].innerText;
+    let position3 = boxes[pattern[2]].innerText;
+
+    if (position1 != "" && position2 != "" && position3 != "") {
+      if (position1 === position2 && position2 === position3) {
+        console.log("winner");
+        disabledBoxes();
+        showWinner(position1);
+      }
+    }
+  }
+};
+
+const showWinner = (winner) => {};
