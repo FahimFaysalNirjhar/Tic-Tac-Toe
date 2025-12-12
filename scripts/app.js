@@ -6,8 +6,8 @@ let msg = document.querySelector("#msg");
 let newBtn = document.querySelector("#New-btn");
 let turnX = true;
 
-const audio = new Audio("../assets/click.mp3");
-let successSound = new Audio("../assets/victory.mp3");
+const audio = new Audio("./assets/click.mp3");
+let successSound = new Audio("./assets/victory.mp3");
 
 const winPattens = [
   [0, 1, 2],
