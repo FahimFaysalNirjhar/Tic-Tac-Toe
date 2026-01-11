@@ -33,3 +33,45 @@ TicTacToe/
 ├─ style.css # CSS styling for layout, colors, and buttons
 ├─ app.js # JavaScript logic for turns, winner detection, and reset
 └─ README.md # Project documentation
+
+---
+
+## ⚙️ Technologies Used
+
+- **HTML5** – Game structure
+- **CSS3** – Styling, layout, and responsive design
+- **JavaScript (ES6)** – Game logic, turn management, and winner detection
+
+---
+
+## 🧠 Game Logic Overview
+
+- Players take turns clicking on empty boxes to place **O** or **X**.
+- The game checks all winning patterns after each move.
+- If a player aligns 3 marks in a row, column, or diagonal, a winner message is displayed.
+- The reset button clears the board and starts a new game.
+
+---
+
+## 🚀 Future Improvements
+
+- Add single-player mode with AI
+- Add scoring system
+- Improve mobile responsiveness
+- Add animations and sound effects
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for personal or educational purposes.
+
+---
+
+## 👨‍💻 Author
+
+**Fahim Faysal**  
+Front-End Developer
+
+- GitHub: https://github.com/FahimFaysalNirjhar
+- Email: fahimfaysal1995@gmail.com
