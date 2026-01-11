@@ -29,7 +29,7 @@ A simple, interactive **Tic Tac Toe** web game built using **HTML, CSS, and Java
 
 TicTacToe/
 │
-├── index.html # Main HTML file
-├── style.css # CSS styling for layout, colors, and buttons
-├── app.js # JavaScript logic for turns, winner detection, and reset
-└── README.md # Project documentation
+├─ index.html # Main HTML file
+├─ style.css # CSS styling for layout, colors, and buttons
+├─ app.js # JavaScript logic for turns, winner detection, and reset
+└─ README.md # Project documentation
